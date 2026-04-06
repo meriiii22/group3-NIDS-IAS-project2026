@@ -1,12 +1,13 @@
+# Machine Learning-Based Network Intrusion Detection System (NIDS)
 
-# Machine Learning-Based Network Intrusion Detection  System (NIDS) with Real-Time Alerting 
 ## Project Overview
 This project is an AI-powered "digital security guard" that monitors network traffic and detects cyberattacks in real-time. It uses a dual-model machine learning approach (Random Forest and Isolation Forest) to catch known threats and flag zero-day anomalies, reducing "alert fatigue" for security analysts. 
 
 ## Dataset
-**Do not upload the dataset to this repository.** 
-Due to size limits, we utilized the NSL-KDD dataset for this project. 
-You can download the full dataset for testing here: [https://www.kaggle.com/datasets/kiranmahesh/nslkdd]
+**A small sample dataset (`sample_dataset.csv`) is included in the `/data` folder for quick testing and evaluation.** 
+
+Due to GitHub size limits, the full dataset is not uploaded to this repository. We utilized the NSL-KDD / CIC-IDS2018 dataset for the full training of the machine learning models in this project. 
+You can download the full dataset here: [https://www.kaggle.com/datasets/kiranmahesh/nslkdd]
 
 ## Setup Instructions
 To run this project locally, you need Python installed on your machine. 
@@ -34,12 +35,13 @@ To replicate our live attack simulation and view the real-time dashboard:
    * Service Detection: `nmap -sV 192.168.56.102`
    * Aggressive Scan: `nmap -A -T4 192.168.56.102`
 
-## 📸 System Screenshots
+## System Screenshots
 
 ### 1. Live Attack Detection (Nmap Scan)
 *The attacker launching a high-intensity scan from the terminal.*
-![Nmap Attack Simulation](docs/nmap_stealth_scan.png)
+![Nmap Attack Simulation](docs/1&2-nmap-attack.png)
+![Nmap Attack Simulation](docs/3rd-nmap-attack.png)
 
 ### 2. Streamlit Real-Time Dashboard
 *The system instantly catching the attack, flashing a "CRITICAL" warning, and categorizing the threat using the MITRE ATT&CK framework.*
-![Dashboard Alert](docs/dashboard_critical_alert.png)
+![Dashboard Alert](docs/dashboard.png)
