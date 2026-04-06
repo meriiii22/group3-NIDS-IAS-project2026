@@ -40,6 +40,7 @@ To replicate our live attack simulation and view the real-time dashboard:
 ### 1. Live Attack Detection (Nmap Scan)
 *The attacker launching a high-intensity scan from the terminal.*
 ![Nmap Attack Simulation](docs/nmap3.png)
+![Nmap Attack Simulation](docs/target-vm.png)
 
 ### 2. Streamlit Real-Time Dashboard
 *The system instantly catching the attack, flashing a "CRITICAL" warning, and categorizing the threat using the MITRE ATT&CK framework.*
