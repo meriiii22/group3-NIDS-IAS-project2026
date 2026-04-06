@@ -1,2 +1,45 @@
-# group3-NIDS-IAS-project2026
-Machine Learning-Based Network Intrusion Detection  System (NIDS) with Real-Time Alerting  Building a digital security guard that watches all network traffic 
+
+# Machine Learning-Based Network Intrusion Detection  System (NIDS) with Real-Time Alerting 
+## Project Overview
+This project is an AI-powered "digital security guard" that monitors network traffic and detects cyberattacks in real-time. It uses a dual-model machine learning approach (Random Forest and Isolation Forest) to catch known threats and flag zero-day anomalies, reducing "alert fatigue" for security analysts. 
+
+## Dataset
+**Do not upload the dataset to this repository.** 
+Due to size limits, we utilized the NSL-KDD dataset for this project. 
+You can download the full dataset for testing here: [https://www.kaggle.com/datasets/kiranmahesh/nslkdd]
+
+## Setup Instructions
+To run this project locally, you need Python installed on your machine. 
+
+1. **Clone the repository:**
+   `git clone https://github.com/your-username/group3-nids-project.git`
+   `cd group3-nids-project`
+
+2. **Install all dependencies:**
+   `pip install -r requirements.txt`
+
+## How to Run the Live Demo
+To replicate our live attack simulation and view the real-time dashboard:
+
+1. **Start the Dashboard:**
+   Navigate to the `/src` folder and run the Streamlit application:
+   `streamlit run dashboard.py`
+   
+2. **Setup the Virtual Environment:**
+   Ensure you have a VirtualBox lab configured with a "Host-only" network to keep the attack traffic safely isolated. You will need an Attacker VM and a Target VM on the `192.168.56.x` subnet.
+
+3. **Launch the Attack Simulation:**
+   From the Attacker VM, run the following `nmap` scans against the Target VM to trigger the NIDS alerts:
+   * Stealth SYN Scan: `nmap -sS 192.168.56.102`
+   * Service Detection: `nmap -sV 192.168.56.102`
+   * Aggressive Scan: `nmap -A -T4 192.168.56.102`
+
+## 📸 System Screenshots
+
+### 1. Live Attack Detection (Nmap Scan)
+*The attacker launching a high-intensity scan from the terminal.*
+![Nmap Attack Simulation](docs/nmap_stealth_scan.png)
+
+### 2. Streamlit Real-Time Dashboard
+*The system instantly catching the attack, flashing a "CRITICAL" warning, and categorizing the threat using the MITRE ATT&CK framework.*
+![Dashboard Alert](docs/dashboard_critical_alert.png)
