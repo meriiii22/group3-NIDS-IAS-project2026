@@ -31,17 +31,17 @@ To replicate our live attack simulation and view the real-time dashboard:
 
 3. **Launch the Attack Simulation:**
    From the Attacker VM, run the following `nmap` scans against the Target VM to trigger the NIDS alerts:
-   * Stealth SYN Scan: `nmap -sS 192.168.56.102`
-   * Service Detection: `nmap -sV 192.168.56.102`
-   * Aggressive Scan: `nmap -A -T4 192.168.56.102`
+      * Stealth SYN Scan: nmap -sS 192.168.56.103
+      * Service Detection: nmap -sV 192.168.56.103
+      * Aggressive Scan: nmap -A -T4 192.168.56.103
 
 ## System Screenshots
 
 ### 1. Live Attack Detection (Nmap Scan)
 *The attacker launching a high-intensity scan from the terminal.*
-![Nmap Attack Simulation](docs/1&2-nmap-attack.png)
-![Nmap Attack Simulation](docs/3rd-nmap-attack.png)
+![Nmap Attack Simulation](docs/nmap3.png)
 
 ### 2. Streamlit Real-Time Dashboard
 *The system instantly catching the attack, flashing a "CRITICAL" warning, and categorizing the threat using the MITRE ATT&CK framework.*
-![Dashboard Alert](docs/dashboard.png)
+![Dashboard Alert](docs/nmap-dashboard5.png)
+![Dashboard Alert](docs/nmap-dashboard6.png)
