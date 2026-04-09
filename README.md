@@ -14,7 +14,7 @@ To run this project locally, you need Python installed on your machine.
 
 1. **Clone the repository:**
    `git clone https://github.com/your-username/group3-NIDS-IAS-project2026.git`
-   `cd group3-nids-project`
+   `cd group3-NIDS-IAS-project2026`
 
 2. **Install all dependencies:**
    `pip install -r requirements.txt`
