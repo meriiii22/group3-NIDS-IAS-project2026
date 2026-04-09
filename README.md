@@ -6,14 +6,14 @@ This project is an AI-powered "digital security guard" that monitors network tra
 ## Dataset
 **A small sample dataset (`sample_dataset.csv`) is included in the `/data` folder for quick testing and evaluation.** 
 
-Due to GitHub size limits, the full dataset is not uploaded to this repository. We utilized the NSL-KDD / CIC-IDS2018 dataset for the full training of the machine learning models in this project. 
+Due to GitHub size limits, the full dataset is not uploaded to this repository. We utilized the NSL-KDD dataset for the full training of the machine learning models in this project. 
 You can download the full dataset here: [https://www.kaggle.com/datasets/kiranmahesh/nslkdd]
 
 ## Setup Instructions
 To run this project locally, you need Python installed on your machine. 
 
 1. **Clone the repository:**
-   `git clone https://github.com/your-username/group3-nids-project.git`
+   `git clone https://github.com/your-username/group3-NIDS-IAS-project2026.git`
    `cd group3-nids-project`
 
 2. **Install all dependencies:**
